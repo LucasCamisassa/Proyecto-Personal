@@ -1,0 +1,9 @@
+@mixin grid-column ($start, $end){
+    grid-column-start: $start;
+    grid-column-end: $end;
+}
+
+@mixin grid-row ($start, $end){
+    grid-row-start: $start;
+    grid-row-end: $end;
+}

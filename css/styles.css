@@ -1,0 +1,166 @@
+/*VARIABLES*/
+/*Mixin*/
+/*GRID*/
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  height: 100vh; }
+  .grid-container-1 .grid-item-1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    justify-self: center;
+    align-self: center; }
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
+  grid-template-rows: repeat(21, 1fr);
+  height: 100vh; }
+  .grid-container-2 .grid-item-2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .grid-container-2 .grid-item-3 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+  .grid-container-2 .grid-item-4 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 8; }
+  .grid-container-2 .grid-item-5 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 10; }
+  .grid-container-2 .grid-item-6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 15; }
+  .grid-container-2 .grid-item-7 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 15; }
+  .grid-container-2 .grid-item-8 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 17;
+    grid-row-end: 18; }
+  .grid-container-2 .grid-item-9 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 18;
+    grid-row-end: 20; }
+
+/*FIN GRID*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../img/Fondo-Blur.png);
+  background-size: cover;
+  width: auto; }
+
+/*ESTILOS GENERALES*/
+header nav {
+  display: flex;
+  height: 70px;
+  width: auto;
+  background-color: black;
+  border-bottom: 3px solid #e6d1ac; }
+  header nav div img {
+    width: 100%;
+    height: 100%;
+    background-color: #e6d1ac;
+    object-fit: contain; }
+  header nav div ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 2px;
+    margin-right: 25px; }
+    header nav div ul li a {
+      text-decoration: none;
+      color: #e6d1ac;
+      font-family: "Playfair Display", serif;
+      font-size: 1rem; }
+
+section div h1 {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  color: #decd95;
+  text-align: center;
+  font-size: 1.5rem; }
+
+section div h2 {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  color: #decd95;
+  text-align: center;
+  font-size: 1rem; }
+
+section div p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  color: #decd95;
+  text-align: center;
+  font-size: 0.85rem; }
+
+section div ul li {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  color: #decd95;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 0.75rem; }
+
+footer {
+  display: flex;
+  height: 30px;
+  background-color: black;
+  border-top: 2px solid #e6d1ac;
+  justify-content: space-between; }
+  footer div p {
+    font-family: "Playfair Display", serif;
+    color: #e6d1ac;
+    font-size: .85rem; }
+  footer div {
+    display: flex; }
+    footer div img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background-color: #e6d1ac; }
+
+/*FIN ESTILOS GENERALES*/
+/*CLASES ESPECIFICAS*/
+.deco-text {
+  border: 2px solid #e6d1ac;
+  border-radius: 20px;
+  box-shadow: 100px; }
+
+.deco-text-2 {
+  border: 2px solid #e6d1ac;
+  border-radius: 20px;
+  box-shadow: 100px;
+  margin: 28px; }
+
+.margin {
+  margin-top: 10px; }
+
+.blur {
+  backdrop-filter: blur(3rem); }
+
+/*FIN CLASES ESPECIFICAS*/
